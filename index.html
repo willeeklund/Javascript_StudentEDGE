@@ -35,14 +35,14 @@
 			<div style="float:left;margin-left: 50px">
                 <h3>Wilhelm Eklund</h3>
                 <img src="img/wiek_bw.jpg" height="150px"/>
-                <p>SRC</p>
-                <p style="font-size:17px">Developer @ Aftonbladet</p>
+                <p style="font-size: 17px;">SRC</p>
+                <p style="font-size: 17px">Developer @ Aftonbladet</p>
             </div>
             <div style="float:right;margin-right: 50px">
                 <h3>Filip Holmberg</h3>
                 <img src="img/fiho.jpg" height="150px"/>
-                <p>A</p>
-                <p style="font-size:17px">Developer @ Aftonbladet</p>
+                <p style="font-size: 17px;">A</p>
+                <p style="font-size: 17px">Developer @ Aftonbladet</p>
             </div>
         </section>
 
@@ -53,10 +53,15 @@
             </section>
           <section>
                 <h1>Goals</h1>
-                <ul class="fragment">
+                <!-- <ul class="fragment">
                     <li>Mobile optimization, 70% mobile traffic</li>
                     <li>Live updated during election night. Every 30 seconds.</li>
                     <li>Scalability, extreme traffic expected</li>
+                </ul> -->
+                <ul class="fragment" style="font-size: 60px; line-height: 75px;">
+                    <li>Mobile</li>
+                    <li>Scalability</li>
+                    <li>Live-updated</li>
                 </ul>
                 <p style="height:400px">&nbsp;</p>
             </section>
@@ -75,7 +80,9 @@
 
             <section>
                 <h2>Pseudo code</h2>
-                <pre class="fragment"><code>    parse_file(1);
+                <p>Classic programming language<br />
+                Blocking operations</p>
+                <pre class="fragment"><code style="font-size: 40px; line-height: 50px;">    parse_file(1);
     parse_file(2);
     parse_file(3);
     save_to_db();
@@ -84,9 +91,25 @@
             </section>
 
             <section>
+                <h2>Node.js - callbacks</h2>
+                <pre class="fragment"><code style="font-size: 40px; line-height: 50px;">
+function (fileContent, callback) {
+    // Parse the file
+    .....
+    callback();
+}
+</code></pre>
+              <p style="height:400px">&nbsp;</p>
+            </section>
+
+            <section>
                 <h1>Node.js</h1>
-                <p>- non-blocking I/O</p>
-                <p class="fragment">120 sec → 12 sec</p>
+                <br />
+                <ul>
+                    <li>non-blocking I/O</li>
+                    <li class="fragment">Perfect for workers</li>
+                    <li class="fragment">120 sec → 12 sec</li>
+                </ul>
                 <p style="height:400px">&nbsp;</p>
             </section>
         </section>
@@ -115,10 +138,9 @@
 
             <section>
                 <h1>d3.js</h1>
-                <ul class="fragment">
-                    <li>Bind data to vector graphics</li>
-                    <li>Draw elements based on input data</li>
-                    <li>Transitions and animations on vector elements</li>
+                <ul class="" style="font-size: 60px; line-height: 75px;">
+                    <li>Vector graphics</li>
+                    <li>Transitions / animations</li>
                 </ul>
                 <p style="height:400px">&nbsp;</p>
             </section>
@@ -132,7 +154,7 @@
         <section>
             <section>
                 <h1>Results</h1>
-                <h2>- Cool statistics</h2>
+                <p style="height:400px">&nbsp;</p>
             </section>
 
             <section>
@@ -159,11 +181,12 @@
             <section>
                 <h2>Most viewed article at Aftonbladet.se</h2>
                 <h1 class="fragment">- ever!</h1>
+                <p style="height:400px">&nbsp;</p>
             </section>
         </section>
 
         <section>
-            <h2>Thank you!</h2>
+            <h1>Thank you!</h1>
             <p style="height:400px">&nbsp;</p>
         </section>
 
