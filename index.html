@@ -31,53 +31,117 @@
 			<div class="slides">
 		<section>
 			<img src="img/ccell_digital_media.png" style="float:left; width: 100px; height: 100px; margin-right: 40px;">
-			<h2 style="float:left;">Interactive Journalism</h2>
-			<div style="float:left;margin-left: 50px">
+			<h1 style="">Javascript</h1>
+			<div style="margin-top: 100px;">
                 <h3>Wilhelm Eklund</h3>
                 <img src="img/wiek_bw.jpg" height="150px"/>
                 <p style="font-size: 17px;">SRC</p>
                 <p style="font-size: 17px">Developer @ Aftonbladet</p>
             </div>
-            <div style="float:right;margin-right: 50px">
-                <h3>Filip Holmberg</h3>
-                <img src="img/fiho.jpg" height="150px"/>
-                <p style="font-size: 17px;">A</p>
-                <p style="font-size: 17px">Developer @ Aftonbladet</p>
-            </div>
         </section>
 
         <section>
             <section>
-                <h1>Visualize election results</h1>
+                <h1>What is Javascript?</h1>
+                <ul>
+                    <li class="fragment">Clientside vs Serverside</li>
+                    <li class="fragment">Everything are Objects</li>
+                    <li class="fragment">Weakly typed scripting language</li>
+                    <li class="fragment">Non-blocking & Asynchronous</li>
+                </ul>
+            </section>
+        </section>
+
+        <section id="js_frameworks_overview">
+            <section>
+                <h1>JS frameworks</h1>
+                <h2>What makes them unique?</h2>
                 <p style="height:400px">&nbsp;</p>
             </section>
-          <section>
-                <h1>Goals</h1>
-                <!-- <ul class="fragment">
-                    <li>Mobile optimization, 70% mobile traffic</li>
-                    <li>Live updated during election night. Every 30 seconds.</li>
-                    <li>Scalability, extreme traffic expected</li>
-                </ul> -->
-                <ul class="fragment" style="font-size: 60px; line-height: 75px;">
-                    <li>Mobile</li>
-                    <li>Scalability</li>
-                    <li>Live-updated</li>
+            <section>
+                <h1>jQuery</h1>
+                <ul class="fragment">
+                    <li>Simple API</li>
+                    <li>Plugins</li>
+                    <li>DOM-manipulation</li>
+                </ul>
+
+                <br /><br />
+                <div class="fragment">
+                    <h5>Example</h5>
+                    <iframe src="http://willeeklund.github.io/JavaScriptForAnalysts/examples/jquery_plugin_carousel.html" width="100%" height="400px" scrolling="no"></iframe>
+                </div>
+                <p style="height:400px">&nbsp;</p>
+            </section>
+            <section>
+                <h1>Backbone</h1>
+                <ul class="fragment">
+                    <li>MVC-structure</li>
+                </ul>
+                <p style="height:400px">&nbsp;</p>
+            </section>
+            <section>
+                <h1>Angular</h1>
+                <ul class="fragment">
+                    <li>MVC-structure</li>
+                    <li>Data-binding within client</li>
+                    <li>Extend HTML with new functionality</li>
+                    <li>Build an app</li>
+                </ul>
+
+                <br /><br />
+                <a href="http://toolbox.aftonbladet.se/aftonbladet-tools/works/admin/module/edit/?id=652" target="_blank">
+                    <h3 class="fragment">Example: admin page with data-binding</h3>
+                </a>
+                <p style="height:400px">&nbsp;</p>
+            </section>
+            <section>
+                <h1>Node.js</h1>
+                <ul class="fragment">
+                    <li>Server-side Javascript</li>
+                    <li>Non-blocking I/O</li>
+                </ul>
+                <p style="height:400px">&nbsp;</p>
+            </section>
+            <section>
+                <h1>Meteor</h1>
+                <ul class="fragment">
+                    <li>Data-binding in client(s)</li>
+                    <li>Sync with the servern (real-time system)</li>
+                </ul>
+
+                <br /><br />
+                <a href="http://cowwedding.nu" target="_blank">
+                    <h3 class="fragment">Example: wedding webshop</h3>
+                </a>
+                <p style="height:400px">&nbsp;</p>
+            </section>
+            <section>
+                <h1>d3.js</h1>
+                <ul class="fragment">
+                    <li>Data-driven documents (d3)</li>
+                    <li>Vector graphics</li>
+                    <li>Transitions / animations</li>
+                </ul>
+
+                <br /><br />
+                <a href="http://valnatt.aftonbladet.se" target="_blank">
+                    <h3 class="fragment">Example: election graphics</h3>
+                </a>
+                <p style="height:400px">&nbsp;</p>
+            </section>
+            <section>
+                <h1>Famo.us</h1>
+                <ul class="fragment">
+                    <li>Cool animations</li>
+                    <li>New way to build and render page</li>
+                    <li>Build an app, not a document</li>
                 </ul>
                 <p style="height:400px">&nbsp;</p>
             </section>
         </section>
 
-        <section>
-            <h1>How to get there</h1>
-            <p style="height:400px">&nbsp;</p>
-        </section>
-
-        <section>
-            <section>
-                <h1>Get the data</h1>
-                <p style="height:400px">&nbsp;</p>
-            </section>
-
+        <section id="node_js">
             <section>
                 <h2>Pseudo code</h2>
                 <p>Classic programming language<br />
@@ -114,37 +178,6 @@ function (fileContent, callback) {
             </section>
         </section>
 
-        <section>
-            <section>
-                <h1>Scalability</h1>
-                <h2>Heroku & cache layers</h2>
-                <p style="height:400px">&nbsp;</p>
-            </section>
-        </section>
-
-        <section>
-            <section>
-                <h1>Visualize the data</h1>
-                <p style="height:400px">&nbsp;</p>
-            </section>
-
-            <section>
-                <img src="img/graph_skane.png" style="width: 60%"/>
-            </section>
-
-            <section>
-                <img src="img/map_skane.png" style="width: 67%"/>
-            </section>
-
-            <section>
-                <h1>d3.js</h1>
-                <ul class="" style="font-size: 60px; line-height: 75px;">
-                    <li>Vector graphics</li>
-                    <li>Transitions / animations</li>
-                </ul>
-                <p style="height:400px">&nbsp;</p>
-            </section>
-        </section>
 
         <section>
             <h1>Demo</h1>
@@ -153,27 +186,19 @@ function (fileContent, callback) {
 
         <section>
             <section>
-                <h1>Results</h1>
+                <h1>Real case: election graphics</h1>
                 <p style="height:400px">&nbsp;</p>
             </section>
 
             <section>
-                <ul style="font-size: 60px; line-height: 75px;">
+                <h1>Results</h1>
+                <p style="height:400px">&nbsp;</p>
+                <ul style="font-size: 60px; line-height: 75px;" class="fragment">
                     <li class="fragment">20 interactions / visit</li>
                     <li class="fragment">2 million unique visitor / 24h</li>
                     <li class="fragment">11.7 million page loads / 24h</li>
                     <li class="fragment">122.000 concurrent users</li>
                     <li class="fragment">...</li>
-                </ul>
-                <p style="height:400px">&nbsp;</p>
-            </section>
-
-            <section>
-                <h1>Goal summary</h1>
-                <ul class="fragment" style="font-size: 60px; line-height: 75px;">
-                    <li>Mobile</li>
-                    <li>Scalability</li>
-                    <li>Live-updated</li>
                 </ul>
                 <p style="height:400px">&nbsp;</p>
             </section>
